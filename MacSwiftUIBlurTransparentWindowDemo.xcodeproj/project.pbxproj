@@ -6,14 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5B44F0782EE53A44001DF6E5 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5B44F0772EE53A44001DF6E5 /* Config.xcconfig */; };
+		5B44F07A2EE53A53001DF6E5 /* Signing.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5B44F0792EE53A53001DF6E5 /* Signing.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		5B1AF3592CF9F73F0053019F /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1AF3592CF9F73F0053019F /* MacSwiftUIBlurTransparentWindowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSwiftUIBlurTransparentWindowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B44F0772EE53A44001DF6E5 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		5B44F0792EE53A53001DF6E5 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5B1AF35B2CF9F73F0053019F /* Playground */ = {
+		5B1AF35B2CF9F73F0053019F /* MacSwiftUIBlurTransparentWindowDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Playground;
+			path = MacSwiftUIBlurTransparentWindowDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +39,9 @@
 		5B1AF3502CF9F73F0053019F = {
 			isa = PBXGroup;
 			children = (
-				5B1AF35B2CF9F73F0053019F /* Playground */,
+				5B44F0772EE53A44001DF6E5 /* Config.xcconfig */,
+				5B44F0792EE53A53001DF6E5 /* Signing.xcconfig */,
+				5B1AF35B2CF9F73F0053019F /* MacSwiftUIBlurTransparentWindowDemo */,
 				5B1AF35A2CF9F73F0053019F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +49,7 @@
 		5B1AF35A2CF9F73F0053019F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B1AF3592CF9F73F0053019F /* Playground.app */,
+				5B1AF3592CF9F73F0053019F /* MacSwiftUIBlurTransparentWindowDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +57,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5B1AF3582CF9F73F0053019F /* Playground */ = {
+		5B1AF3582CF9F73F0053019F /* MacSwiftUIBlurTransparentWindowDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B1AF3682CF9F7410053019F /* Build configuration list for PBXNativeTarget "Playground" */;
+			buildConfigurationList = 5B1AF3682CF9F7410053019F /* Build configuration list for PBXNativeTarget "MacSwiftUIBlurTransparentWindowDemo" */;
 			buildPhases = (
 				5B1AF3552CF9F73F0053019F /* Sources */,
 				5B1AF3562CF9F73F0053019F /* Frameworks */,
@@ -61,13 +70,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5B1AF35B2CF9F73F0053019F /* Playground */,
+				5B1AF35B2CF9F73F0053019F /* MacSwiftUIBlurTransparentWindowDemo */,
 			);
-			name = Playground;
+			name = MacSwiftUIBlurTransparentWindowDemo;
 			packageProductDependencies = (
 			);
 			productName = Playground;
-			productReference = 5B1AF3592CF9F73F0053019F /* Playground.app */;
+			productReference = 5B1AF3592CF9F73F0053019F /* MacSwiftUIBlurTransparentWindowDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +94,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5B1AF3542CF9F73F0053019F /* Build configuration list for PBXProject "Playground" */;
+			buildConfigurationList = 5B1AF3542CF9F73F0053019F /* Build configuration list for PBXProject "MacSwiftUIBlurTransparentWindowDemo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B1AF3582CF9F73F0053019F /* Playground */,
+				5B1AF3582CF9F73F0053019F /* MacSwiftUIBlurTransparentWindowDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -109,6 +118,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B44F07A2EE53A53001DF6E5 /* Signing.xcconfig in Resources */,
+				5B44F0782EE53A44001DF6E5 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,9 +138,9 @@
 /* Begin XCBuildConfiguration section */
 		5B1AF3662CF9F7410053019F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B44F0772EE53A44001DF6E5 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -190,9 +201,9 @@
 		};
 		5B1AF3672CF9F7410053019F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B44F0772EE53A44001DF6E5 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -248,11 +259,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Playground/Playground.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MacSwiftUIBlurTransparentWindowDemo/MacSwiftUIBlurTransparentWindowDemo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Playground/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -261,9 +272,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rbq2012.Playground;
+				PRODUCT_BUNDLE_IDENTIFIER = rbq2012.MacSwiftUIBlurTransparentWindowDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MacSwiftUIBlurTransparentWindowDemo/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -273,11 +285,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Playground/Playground.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MacSwiftUIBlurTransparentWindowDemo/MacSwiftUIBlurTransparentWindowDemo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Playground/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -286,9 +298,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rbq2012.Playground;
+				PRODUCT_BUNDLE_IDENTIFIER = rbq2012.MacSwiftUIBlurTransparentWindowDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MacSwiftUIBlurTransparentWindowDemo/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -296,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B1AF3542CF9F73F0053019F /* Build configuration list for PBXProject "Playground" */ = {
+		5B1AF3542CF9F73F0053019F /* Build configuration list for PBXProject "MacSwiftUIBlurTransparentWindowDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B1AF3662CF9F7410053019F /* Debug */,
@@ -305,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B1AF3682CF9F7410053019F /* Build configuration list for PBXNativeTarget "Playground" */ = {
+		5B1AF3682CF9F7410053019F /* Build configuration list for PBXNativeTarget "MacSwiftUIBlurTransparentWindowDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B1AF3692CF9F7410053019F /* Debug */,

@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  MacSwiftUIBlurTransparentWindowDemo
+//
+//  Created by MeowCat on 2025/12/7.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+#include "Signing.xcconfig"
+// Create `Signing.xcconfig` and add your team like:
+// DEVELOPMENT_TEAM[sdk=macosx*] = SOME_VALUE
