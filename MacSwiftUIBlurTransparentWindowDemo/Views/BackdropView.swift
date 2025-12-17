@@ -68,54 +68,6 @@ public class BackdropView: NSVisualEffectView {
         public static var clear = Effect(NSColor(calibratedWhite: 1.00, alpha: 0.05),
                                          NSColor(calibratedWhite: 1.00, alpha: 0.00),
                                          nil)
-        
-        /// A medium light effect.
-        public static var mediumLight = Effect(NSColor(calibratedWhite: 1.00, alpha: 0.30),
-                                               NSColor(calibratedWhite: 0.94, alpha: 1.00),
-                                               kCAFilterDarkenBlendMode)
-        
-        /// A light effect.
-        public static var light = Effect(NSColor(calibratedWhite: 0.97, alpha: 0.70),
-                                         NSColor(calibratedWhite: 0.94, alpha: 1.00),
-                                         kCAFilterDarkenBlendMode)
-        
-        /// An ultra light effect.
-        public static var ultraLight = Effect(NSColor(calibratedWhite: 0.97, alpha: 0.85),
-                                              NSColor(calibratedWhite: 0.94, alpha: 1.00),
-                                              kCAFilterDarkenBlendMode)
-        
-        /// A medium dark effect.
-        public static var mediumDark = Effect(NSColor(calibratedWhite: 1.00, alpha: 0.40),
-                                              NSColor(calibratedWhite: 0.84, alpha: 1.00),
-                                              kCAFilterDarkenBlendMode)
-        
-        /// A dark effect.
-        public static var dark = Effect(NSColor(calibratedWhite: 0.12, alpha: 0.45),
-                                        NSColor(calibratedWhite: 0.16, alpha: 1.00),
-                                        kCAFilterLightenBlendMode)
-        
-        /// An ultra dark effect.
-        public static var ultraDark = Effect(NSColor(calibratedWhite: 0.12, alpha: 0.80),
-                                             NSColor(calibratedWhite: 0.01, alpha: 1.00),
-                                             kCAFilterLightenBlendMode)
-        
-        /// A selection effect that matches the user's current aqua color preference.
-        public static var selection = Effect(NSColor.keyboardFocusIndicatorColor.withAlphaComponent(0.7),
-                                             NSColor.keyboardFocusIndicatorColor,
-                                             kCAFilterDestOver)
-        // Note: `keyboardFocusIndicatorColor` was used because it's the only
-        // dynamic color that isn't a pattern image color.
-
-        public static var builtins: [(name: String, value: Effect)] = [
-            ("clear", .clear),
-            ("mediumLight", .mediumLight),
-            ("light", .light),
-            ("ultraLight", .ultraLight),
-            ("mediumDark", .mediumDark),
-            ("dark", .dark),
-            ("ultraDark", .ultraDark),
-            ("selection", .selection)
-        ]
     }
     
     /// If multiple `BackdropView`s within the same layer tree (that is, window)
@@ -319,7 +271,6 @@ public class BackdropView: NSVisualEffectView {
         self.blendingGroup = nil
         self.blurRadius = 5.0
         self.saturationFactor = 1.0
-        self.effect = .dark
         
         // [Note] macOS 11+: no longer necessary to call `removeObserver` upon `deinit`.
         NotificationCenter.default.addObserver(self, selector: #selector(self.reduceTransparencyChanged(_:)),

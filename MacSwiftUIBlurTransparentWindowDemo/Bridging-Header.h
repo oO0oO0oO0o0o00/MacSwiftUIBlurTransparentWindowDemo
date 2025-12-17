@@ -9,11 +9,29 @@
 #include <QuartzCore/CABase.h>
 #include <QuartzCore/CALayer.h>
 
-extern NSString * const kCAFilterDarkenBlendMode;
-extern NSString * const kCAFilterDestOver;
-extern NSString * const kCAFilterLightenBlendMode;
-extern NSString * const kCAFilterColorSaturate;
-extern NSString * const kCAFilterGaussianBlur;
+#define CA_EXTERN extern
+
+CA_EXTERN NSString * const kCAFilterNormalBlendMode;
+CA_EXTERN NSString * const kCAFilterMultiplyBlendMode;
+CA_EXTERN NSString * const kCAFilterScreenBlendMode;
+CA_EXTERN NSString * const kCAFilterOverlayBlendMode;
+CA_EXTERN NSString * const kCAFilterDarkenBlendMode;
+CA_EXTERN NSString * const kCAFilterLightenBlendMode;
+CA_EXTERN NSString * const kCAFilterColorDodgeBlendMode;
+CA_EXTERN NSString * const kCAFilterColorBurnBlendMode;
+CA_EXTERN NSString * const kCAFilterSoftLightBlendMode;
+CA_EXTERN NSString * const kCAFilterHardLightBlendMode;
+CA_EXTERN NSString * const kCAFilterDifferenceBlendMode;
+CA_EXTERN NSString * const kCAFilterExclusionBlendMode;
+CA_EXTERN NSString * const kCAFilterSubtractBlendMode;
+CA_EXTERN NSString * const kCAFilterDivideBlendMode;
+CA_EXTERN NSString * const kCAFilterLinearBurnBlendMode;
+CA_EXTERN NSString * const kCAFilterLinearDodgeBlendMode;
+CA_EXTERN NSString * const kCAFilterLinearLightBlendMode;
+CA_EXTERN NSString * const kCAFilterPinLightBlendMode;
+CA_EXTERN NSString * const kCAFilterDestOver;
+CA_EXTERN NSString * const kCAFilterColorSaturate;
+CA_EXTERN NSString * const kCAFilterGaussianBlur;
 
 void CGSGetCatenatedWindowTransform(int cid, int wid, CGAffineTransform* transform);
 void CGSFlushSurface(int cid, int wid, int sid, int flag);

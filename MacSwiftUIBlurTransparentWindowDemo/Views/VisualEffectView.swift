@@ -10,7 +10,9 @@ import SwiftUI
 struct VisualEffectView: NSViewRepresentable {
     let blurRadius: CGFloat
     let saturationFactor: CGFloat
-    let effect: String
+    let color: UInt32
+    let tintColor: UInt32
+    let tintMode: String
     
     func makeNSView(context: Context) -> BackdropView {
         let view = BackdropView()
@@ -26,10 +28,9 @@ struct VisualEffectView: NSViewRepresentable {
     func updateNSView(_ view: BackdropView, context: Context) {
         view.blurRadius = blurRadius
         view.saturationFactor = saturationFactor
-        if let item = BackdropView.Effect.builtins.first(where: {
-            $0.name == effect
-        }) {
-            view.effect = item.value
-        }
+        view.effect = .init(
+            NSColor(rgba: color),
+            NSColor(rgba: tintColor),
+            tintMode)
     }
 }
